@@ -369,6 +369,182 @@
             gap: 1.5rem;
         }
 
+        /* Resume Section Styles */
+         
+        /*value Proportion*/
+        .value-proposition {
+            border-top-color: var(--accent-red);
+        }
+        
+        .skills-list, .value-list {
+            text-align: left;
+            padding-left: 1.5rem;
+            color: var(--text-color);
+        }
+        
+        .skills-list li, .value-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+        }
+        
+        .skills-list li:before, .value-list li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+         /* Fresher Message Section */
+        .fresher-message {
+            display: flex;
+            margin-top: 10px;
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow);
+            align-items: center;
+        }
+        
+        .message-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-right: 2rem;
+            flex-shrink: 0;
+        }
+        
+        .message-content {
+            flex-grow: 1;
+        }
+        
+        .message-content h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .message-content ul {
+            padding-left: 1.5rem;
+            color: var(--text-color);
+        }
+        
+        .message-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+.resume-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.resume-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.highlight-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-top: 4px solid #3498db;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.highlight-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.highlight-card p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+.resume-download {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    position: relative;
+}
+
+.resume-preview {
+    position: relative;
+}
+
+.preview-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    padding: 2rem;
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .resume-highlights {
+        grid-template-columns: 1fr;
+    }
+}
+
         .contact-card {
             background: white;
             padding: 1.5rem;
@@ -624,6 +800,73 @@ Alongside academics, I actively explored new technologies, which sparked my curi
                 </div>
             </div>
         </section>
+  
+     <section id="resume" class="resume-section">
+    <div class="container">
+        <h2 class="section-title">Professional Resume</h2>
+        <p class="section-subtitle">A summary of my qualifications and experience</p>
+        
+        <div class="resume-highlights">
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Education</h3>
+                <p>Bachelor's of Technology in <br>Electrical and Electronics Engineering<br>SVPCET, 2025</p>
+            </div>
+            
+            <div class="highlight-card">
+                <div class="highlight-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Skills</h3>
+                <p>Python, C-Programming, Django<br>HTML, CSS, JavaScript, MySQL</p>
+            </div>
+        </div>
+        <div class="highlight-card value-proposition">
+                    <div class="highlight-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Value Proposition</h3>
+                    <ul class="value-list">
+                        <li><strong>Fresh Perspective:</strong> Unconstrained by legacy thinking</li>
+                        <li><strong>Up-to-Date Skills:</strong> Trained in latest technologies</li>
+                        <li><strong>Adaptability:</strong> Thrive in agile environments</li>
+                        <li><strong>Proven Capacity:</strong> Built a full-stack e-commerce app in 4 weeks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fresher-message">
+                <div class="message-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="message-content">
+                    <h3>Why Consider a Fresher?</h3>
+                    <p>I bring the perfect combination of current technical training, unbridled enthusiasm, and a problem-solving mindset. While I may lack years of experience, I compensate with:</p>
+                    <ul>
+                        <li>Fresh academic knowledge of best practices and modern frameworks</li>
+                        <li>Eagerness to learn and grow within your organization</li>
+                        <li>Ability to adapt quickly to new technologies and methodologies</li>
+                        <li>No bad habits to unlearn from previous workplaces</li>
+                        <li>Recent completion of rigorous Electrical curriculum</li>
+                    </ul>
+                </div>
+            </div>
+            
+        
+        <div class="resume-download">
+            <div class="resume-preview">
+                <embed src="./assets/kishore_mondi_resume-5.pdf" type="application/pdf" width="100%" height="600px" />
+                <div class="preview-overlay">
+                    <a href="./assets/kishore_mondi_resume-5.pdf" download class="download-btn">
+                        <i class="fas fa-download"></i> Download Full Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <section id="contact">
             <h2>Contact Me</h2>
@@ -651,6 +894,7 @@ Alongside academics, I actively explored new technologies, which sparked my curi
                         <a href="https://www.linkedin.com/in/kishore-mondi-963248318/" target="_blank" class="btn" style="padding: 0.5rem; width: 40px; height: 40px;">
                             <i class="fab fa-linkedin"></i>
                         </a>
+                        
                     </div>
                 </div>
             </div>
